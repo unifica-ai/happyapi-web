@@ -1,5 +1,32 @@
 # HappyAPI Web
 
+[HappyAPI][happyapi] +  [Biff][biff]
+
+[happyapi]: https://github.com/timothypratley/happygapi
+[biff]: https://biffweb.com
+
+## Trying it
+
+Add a `happyapi.edn` file at project root, similar to this:
+
+``` 4d
+{:google {:deps            [:clj-http :cheshire]
+          :fns             {:run-server web.happyapi/start}
+          :client_id       "XXX.apps.googleusercontent.com"                ;; oauth2 client_id of your app
+          :client_secret   "YYYY"
+          :redirect_uri    "http://localhost:8080/redirect"
+          :scopes          []                     ;; optional default scopes
+          :keywordize-keys true}}
+```
+
+Start the server
+
+```
+clj -M:dev dev
+```
+
+Then go to `http://localhost:8080`
+
 Like
 - Code generation approach
   - documentation
