@@ -2,7 +2,7 @@
 
 [HappyAPI][happyapi] +  [Biff][biff]
 
-[happyapi]: https://github.com/timothypratley/happygapi
+[happyapi]: https://github.com/timothypratley/happyapi
 [biff]: https://biffweb.com
 
 ## Trying it

@@ -59,11 +59,13 @@
 (defn wrap-debug-middlware [request]
   (fn
     ([args]
-     (let [response (request (assoc args :debug true :debug-body true))]
-       (def args* args)
-       (def response* response)
-       (println "RESPONSE")
+     (let [_ (println "--------------- REQUEST ----------------------")
+           _ (biff/pprint args)
+           _ (def args* args)
+           response (request (assoc args :debug-body true))]
+       (println "----------------- RESPONSE ------------------")
        (biff/pprint response)
+       (def response* response)
        response))
     ([args respond raise]
      (request args respond raise))))

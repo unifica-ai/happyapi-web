@@ -41,9 +41,6 @@
                        :keywordize-keys true})]
     (oauth2/with-timestamp resp)
 
-    ;; This seems to be returning the response body only, not the outer HTTP object?
-    ;; Not sure why.
-    ;;
     #_(oauth2/with-timestamp (:body resp))
     #_(when (middleware/success? resp)
       (oauth2/with-timestamp (:body resp)))))

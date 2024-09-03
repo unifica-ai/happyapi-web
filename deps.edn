@@ -14,9 +14,7 @@
         io.github.timothypratley/happyapi {:local/root "/Users/kyle/src/github.com/unifica-ai/happyapi"
                                            ;; :mvn/version "0.1.110-alpha"
                                            }
-        io.github.timothypratley/happyapi.google {:local/root "/Users/kyle/src/github.com/unifica-ai/happyapi.google"
-                                                  ;; :mvn/version "0.1.4-alpha"
-                                                  }
+
         djblue/portal {:mvn/version "0.57.2"}}
 
  :aliases
